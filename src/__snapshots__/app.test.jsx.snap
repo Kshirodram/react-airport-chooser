@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render App correctly 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Select Airport
+    </button>
+    <div
+      className="hide"
+    >
+      <input
+        className="inputBox"
+        onChange={[Function]}
+        placeholder="Search for Airport Name/Code"
+        type="search"
+        value=""
+      />
+      <ul>
+        <div
+          className="noDataFound"
+        >
+          No Data Found
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

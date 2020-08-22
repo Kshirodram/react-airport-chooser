@@ -1,0 +1,62 @@
+{
+  "name": "airport-choose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack",
+    "test": "jest --config config/jest.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "camelcase": "^6.0.0",
+    "compression": "^1.7.4",
+    "css-loader": "^3.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "react": "^16.12.0",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.1",
+    "react-test-renderer": "^16.13.1",
+    "redux": "^4.0.5",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "mini-css-extract-plugin": "^0.9.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "esmodules": true,
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
+}
